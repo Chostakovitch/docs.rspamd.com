@@ -47,7 +47,8 @@ rspamd_config:register_symbol({
 ### Your first symbol
 
 ```lua
--- /etc/rspamd/rspamd.local.lua
+-- /etc/rspamd/lua.local.d/custom_rule.lua
+-- `custom_rule` basename is arbitrary
 local function always_fires(task)
   return true
 end
